@@ -101,7 +101,7 @@ pipeline {
         /* These steps will not appear as a Blue Ocean pipeline step, but will be executed and shown in the log */
         always {
             // deleteDir() will clean the workspace, ensuring fewer errors in future builds.  Remove if other pipelines will be referencing this workspace.
-            echo 'cleaning workspace'
+            echo 'cleansing workspace'
             deleteDir()
             // Slack Integration, uses slack plugin
             script{
